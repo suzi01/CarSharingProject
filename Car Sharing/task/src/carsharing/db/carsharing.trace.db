@@ -1,0 +1,1212 @@
+2023-11-02 21:47:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE   COMPANY (ID INTEGER,  NAME VARCHAR(255) [*]"; expected "FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE   COMPANY (ID INTEGER,  NAME VARCHAR(255)  [42001-200]
+2023-11-02 21:47:55 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE   COMPANY (ID INTEGER,  NAME VARCHAR(255) [*]"; expected "FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE   COMPANY (ID INTEGER,  NAME VARCHAR(255)  [42001-200]
+2023-11-02 21:48:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE   COMPANY (ID INTEGER,  NAME VARCHAR(255) [*]"; expected "FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE   COMPANY (ID INTEGER,  NAME VARCHAR(255)  [42001-200]
+2023-11-02 21:48:50 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE   COMPANY (ID INTEGER,  NAME VARCHAR(255) [*]"; expected "FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE   COMPANY (ID INTEGER,  NAME VARCHAR(255)  [42001-200]
+2023-11-02 21:48:50 jdbc[5]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DatabaseUtil.getConnection(DatabaseUtil.java:19)
+	at CarSharingTest.test2_checkDatabaseConnection(CarSharingTest.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.common.ReflectionUtils.invokeMethod(ReflectionUtils.java:92)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$searchDynamicTests$2(DynamicTesting.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$getTests$0(DynamicTesting.java:252)
+	at org.hyperskill.hstest.testing.runner.AsyncDynamicTestingRunner.lambda$runMain$0(AsyncDynamicTestingRunner.java:45)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 23 more
+2023-11-12 19:35:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE {table_name} MODIFY ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME {data_type} NOT NULL, ADD CONSTRAINT UNIQUE_NAME UNIQUE (NAME[*])" [42000-200]
+2023-11-12 19:37:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY MODIFY ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME {data_type} NOT NULL, ADD CONSTRAINT UNIQUE_NAME UNIQUE (NAME[*])" [42000-200]
+2023-11-12 19:37:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY MODIFY[*] ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME VARCHAR(255) NOT NULL, ADD CONSTRAINT UNIQUE_NAME UNIQUE (NAME)"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE COMPANY MODIFY ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME VARCHAR(255) NOT NULL, ADD CONSTRAINT UNIQUE_NAME UNIQUE (NAME) [42001-200]
+2023-11-12 19:42:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY MODIFY[*] ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME VARCHAR(255) NOT NULL, ADD CONSTRAINT UNIQUE_NAME UNIQUE (NAME)"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE COMPANY MODIFY ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME VARCHAR(255) NOT NULL, ADD CONSTRAINT UNIQUE_NAME UNIQUE (NAME) [42001-200]
+2023-11-12 19:48:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY MODIFY[*] ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME VARCHAR(255) NOT NULL, ADD CONSTRAINT NAME UNIQUE (NAME)"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE COMPANY MODIFY ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME VARCHAR(255) NOT NULL, ADD CONSTRAINT NAME UNIQUE (NAME) [42001-200]
+2023-11-12 19:49:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY MODIFY[*] ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME VARCHAR(255) NOT NULL, ADD UNIQUE (NAME)"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE COMPANY MODIFY ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME VARCHAR(255) NOT NULL, ADD UNIQUE (NAME) [42001-200]
+2023-11-12 19:49:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY MODIFY[*] ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME VARCHAR(255) NOT NULL, ADD UNIQUE (NAME)"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE COMPANY MODIFY ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME VARCHAR(255) NOT NULL, ADD UNIQUE (NAME) [42001-200]
+2023-11-12 19:51:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY MODIFY[*] ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME VARCHAR(255) NOT NULL, ADD UNIQUE (NAME)"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE COMPANY MODIFY ID INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY (ID), MODIFY NAME VARCHAR(255) NOT NULL, ADD UNIQUE (NAME) [42001-200]
+2023-11-12 19:58:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY ALTER COLUMN ID INT AUTO_INCREMENT NOT NULL,[*] ADD PRIMARY KEY (ID), ALTER COLUMN NAME VARCHAR(255) NOT NULL, ADD CONSTRAINT UNIQUE_NAME UNIQUE (NAME)"; SQL statement:
+ALTER TABLE COMPANY ALTER COLUMN ID INT AUTO_INCREMENT NOT NULL, ADD PRIMARY KEY (ID), ALTER COLUMN NAME VARCHAR(255) NOT NULL, ADD CONSTRAINT UNIQUE_NAME UNIQUE (NAME) [42000-200]
+2023-11-12 20:00:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY ALTER COLUMN ID INT AUTO_INCREMENT NOT NULL,[*] ADD PRIMARY KEY (ID)"; SQL statement:
+ALTER TABLE COMPANY ALTER COLUMN ID INT AUTO_INCREMENT NOT NULL, ADD PRIMARY KEY (ID) [42000-200]
+2023-11-12 20:15:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY ALTER COLUMN ID INTEGER AUTO_INCREMENT NOT NULL,[*] ADD PRIMARY KEY (ID)"; SQL statement:
+ALTER TABLE COMPANY ALTER COLUMN ID INTEGER AUTO_INCREMENT NOT NULL, ADD PRIMARY KEY (ID) [42000-200]
+2023-11-12 20:19:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY ALTER COLUMN ID INTEGER AUTO_INCREMENT NOT NULL,[*] ADD PRIMARY KEY (ID)"; SQL statement:
+ALTER TABLE COMPANY ALTER COLUMN ID INTEGER AUTO_INCREMENT NOT NULL, ADD PRIMARY KEY (ID) [42000-200]
+2023-11-12 20:19:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ID" must not be nullable; SQL statement:
+ALTER TABLE COMPANY ADD PRIMARY KEY (ID) [90023-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.mvstore.db.MVTable.addIndex(MVTable.java:334)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:151)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at carsharing.Main.main(Main.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-12 20:19:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ID" must not be nullable; SQL statement:
+ALTER TABLE COMPANY ADD PRIMARY KEY (ID) [90023-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.mvstore.db.MVTable.addIndex(MVTable.java:334)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:151)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at carsharing.Main.main(Main.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-12 20:22:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY ALTER COLUMN NAME VARCHAR(255) NOT NULL,[*] ADD CONSTRAINT UNIQUE_NAME UNIQUE (NAME)"; SQL statement:
+ALTER TABLE COMPANY ALTER COLUMN NAME VARCHAR(255) NOT NULL, ADD CONSTRAINT UNIQUE_NAME UNIQUE (NAME) [42000-200]
+2023-11-12 20:22:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY ALTER COLUMN NAME VARCHAR(255) NOT NULL,[*] ADD CONSTRAINT UNIQUE_NAME UNIQUE (NAME)"; SQL statement:
+ALTER TABLE COMPANY ALTER COLUMN NAME VARCHAR(255) NOT NULL, ADD CONSTRAINT UNIQUE_NAME UNIQUE (NAME) [42000-200]
+2023-11-12 20:22:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY ALTER COLUMN ID INTEGER NOT NULLADD[*] PRIMARY KEY (ID)"; expected "NULL"; SQL statement:
+ALTER TABLE COMPANY ALTER COLUMN ID INTEGER NOT NULLADD PRIMARY KEY (ID) [42001-200]
+2023-11-12 20:23:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE COMPANY ALTER COLUMN ID INTEGER NOT NULL,[*]ADD PRIMARY KEY (ID)"; SQL statement:
+ALTER TABLE COMPANY ALTER COLUMN ID INTEGER NOT NULL,ADD PRIMARY KEY (ID) [42000-200]
+2023-11-12 20:27:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE COMPANY (ID INTEGER NOT PRIMARY_KEY[*] AUTO_INCREMENT,  NAME VARCHAR(255)) UNIQUE NOT NULL "; expected "NULL"; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER NOT PRIMARY_KEY AUTO_INCREMENT,  NAME VARCHAR(255)) UNIQUE NOT NULL  [42001-200]
+2023-11-12 20:30:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE COMPANY (ID INTEGER NOT PRIMARY[*] KEY AUTO_INCREMENT, NAME VARCHAR(255)) NOT NULL UNIQUE "; expected "NULL"; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER NOT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255)) NOT NULL UNIQUE  [42001-200]
+2023-11-12 20:31:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255)) NOT[*] NULL UNIQUE "; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255)) NOT NULL UNIQUE  [42000-200]
+2023-11-12 20:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTOINCREMENT[*], NAME VARCHAR(255) NOT NULL UNIQUE)"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42001-200]
+2023-11-12 21:15:43 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The result set is not scrollable and can not be reset. You may need to use conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ..). [90128-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcResultSet.resetResult(JdbcResultSet.java:3301)
+	at org.h2.jdbc.JdbcResultSet.beforeFirst(JdbcResultSet.java:2772)
+	at carsharing.Main.listCompanies(Main.java:85)
+	at carsharing.Main.main(Main.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-12 21:16:19 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The result set is not scrollable and can not be reset. You may need to use conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ..). [90128-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcResultSet.resetResult(JdbcResultSet.java:3301)
+	at org.h2.jdbc.JdbcResultSet.beforeFirst(JdbcResultSet.java:2772)
+	at carsharing.Main.listCompanies(Main.java:86)
+	at carsharing.Main.main(Main.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-14 12:23:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE CAR (ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE,COMPANY_ID INT NOT NULLCONSTRAINT[*] FK_COMPANY FOREIGN KEY (ID)REFERENCES COMPANY(ID))"; expected "NULL"; SQL statement:
+CREATE TABLE CAR (ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE,COMPANY_ID INT NOT NULLCONSTRAINT fk_company FOREIGN KEY (ID)REFERENCES COMPANY(ID)) [42001-200]
+2023-11-14 12:25:22 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "COMPANY" because "FK_COMPANY" depends on it; SQL statement:
+DROP TABLE IF EXISTS COMPANY [90107-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:98)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:124)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at carsharing.Main.main(Main.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-14 12:27:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE CAR (ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE, COMPANY_ID INT NOT NULL, CONSTRAINT FK_COMPANY FOREIGN KEY (ID) REFERENCES COMPANY(ID)) ON[*] DELETE SET NULL"; SQL statement:
+CREATE TABLE CAR (ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE, COMPANY_ID INT NOT NULL, CONSTRAINT fk_company FOREIGN KEY (ID) REFERENCES COMPANY(ID)) ON DELETE SET NULL [42000-200]
+2023-11-14 12:28:08 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "COMPANY" because "FK_COMPANY" depends on it; SQL statement:
+DROP TABLE IF EXISTS COMPANY [90107-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:98)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:124)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at carsharing.Main.main(Main.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-14 12:32:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE CAR (ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE, COMPANY_ID INT NOT NULL CONSTRAINT COMPANY_ID FOREIGN[*] KEY (ID) REFERENCES COMPANY(ID) ON DELETE SET NULL)"; expected "PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE CAR (ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE, COMPANY_ID INT NOT NULL CONSTRAINT COMPANY_ID FOREIGN KEY (ID) REFERENCES COMPANY(ID) ON DELETE SET NULL) [42001-200]
+2023-11-14 12:35:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE CAR (ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE, COMPANY_ID INT NOT NULL CONSTRAINT COMPANY_ID FOREIGN[*] KEY (COMPANY_ID) REFERENCES COMPANY(ID) ON DELETE SET NULL)"; expected "PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE CAR (ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE, COMPANY_ID INT NOT NULL CONSTRAINT COMPANY_ID FOREIGN KEY (COMPANY_ID) REFERENCES COMPANY(ID) ON DELETE SET NULL) [42001-200]
+2023-11-14 12:37:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE CAR (ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE, COMPANY_ID INT NOT NULL CONSTRAINT FK_COMPANY_ID FOREIGN[*] KEY (COMPANY_ID) REFERENCES COMPANY(ID) ON DELETE SET NULL"; expected "PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE CAR (ID INT PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE, COMPANY_ID INT NOT NULL CONSTRAINT FK_COMPANY_ID FOREIGN KEY (COMPANY_ID) REFERENCES COMPANY(ID) ON DELETE SET NULL [42001-200]
+2023-11-18 22:05:00 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1113)
+	at org.h2.mvstore.MVStore.storeNow(MVStore.java:1479)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1334)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1312)
+	at org.h2.mvstore.MVStore.commit(MVStore.java:1303)
+	at org.h2.mvstore.tx.TransactionStore.close(TransactionStore.java:333)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:398)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1545)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at carsharing.Main.main(Main.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 30 more
+Caused by: java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:479)
+	at org.h2.mvstore.FileStore.writeFully(FileStore.java:113)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1111)
+	... 24 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:883)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:864)
+	at org.h2.store.fs.FileNio.write(FilePathNio.java:79)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:475)
+	... 26 more
+2023-11-18 22:05:00 database: close
+org.h2.message.DbException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:421)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1545)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at carsharing.Main.main(Main.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 20 more
+Caused by: java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:479)
+	at org.h2.mvstore.FileStore.writeFully(FileStore.java:113)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1111)
+	at org.h2.mvstore.MVStore.storeNow(MVStore.java:1479)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1334)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1312)
+	at org.h2.mvstore.MVStore.commit(MVStore.java:1303)
+	at org.h2.mvstore.tx.TransactionStore.close(TransactionStore.java:333)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:398)
+	... 18 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:883)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:864)
+	at org.h2.store.fs.FileNio.write(FilePathNio.java:79)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:475)
+	... 26 more
+2023-11-18 22:17:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "RENTED_CAR_ID" not found; SQL statement:
+INSERT INTO CAR (NAME, RENTED_CAR_ID) VALUES (?, ?) [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at carsharing.db.Service.Impl.CustomerDAO.add(CustomerDAO.java:40)
+	at carsharing.db.Util.MenuUtil.createCustomer(Menu.java:309)
+	at carsharing.db.Util.MenuUtil.mainMenuInput(Menu.java:40)
+	at carsharing.Main.main(Main.java:200)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-18 22:19:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "FK_CAR" not found; SQL statement:
+INSERT INTO CAR (NAME, FK_CAR) VALUES (?, ?) [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.command.Parser.parseColumn(Parser.java:1450)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1435)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1804)
+	at org.h2.command.Parser.parseInsert(Parser.java:1749)
+	at org.h2.command.Parser.parsePrepared(Parser.java:954)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at carsharing.db.Service.Impl.CustomerDAO.add(CustomerDAO.java:40)
+	at carsharing.db.Util.MenuUtil.createCustomer(Menu.java:309)
+	at carsharing.db.Util.MenuUtil.mainMenuInput(Menu.java:40)
+	at carsharing.Main.main(Main.java:200)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-18 22:42:38 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1113)
+	at org.h2.mvstore.MVStore.storeNow(MVStore.java:1479)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1334)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1312)
+	at org.h2.mvstore.MVStore.commit(MVStore.java:1303)
+	at org.h2.mvstore.tx.TransactionStore.close(TransactionStore.java:333)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:398)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1545)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at carsharing.Main.main(Main.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 30 more
+Caused by: java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:479)
+	at org.h2.mvstore.FileStore.writeFully(FileStore.java:113)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1111)
+	... 24 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:883)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:864)
+	at org.h2.store.fs.FileNio.write(FilePathNio.java:79)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:475)
+	... 26 more
+2023-11-18 22:42:38 database: close
+org.h2.message.DbException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:421)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1545)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at carsharing.Main.main(Main.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 20 more
+Caused by: java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:479)
+	at org.h2.mvstore.FileStore.writeFully(FileStore.java:113)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1111)
+	at org.h2.mvstore.MVStore.storeNow(MVStore.java:1479)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1334)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1312)
+	at org.h2.mvstore.MVStore.commit(MVStore.java:1303)
+	at org.h2.mvstore.tx.TransactionStore.close(TransactionStore.java:333)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:398)
+	... 18 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:883)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:864)
+	at org.h2.store.fs.FileNio.write(FilePathNio.java:79)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:475)
+	... 26 more
+2023-11-18 22:44:26 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1113)
+	at org.h2.mvstore.MVStore.storeNow(MVStore.java:1479)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1334)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1312)
+	at org.h2.mvstore.MVStore.commit(MVStore.java:1303)
+	at org.h2.mvstore.tx.TransactionStore.close(TransactionStore.java:333)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:398)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1545)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at carsharing.Main.main(Main.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 30 more
+Caused by: java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:479)
+	at org.h2.mvstore.FileStore.writeFully(FileStore.java:113)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1111)
+	... 24 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:883)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:864)
+	at org.h2.store.fs.FileNio.write(FilePathNio.java:79)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:475)
+	... 26 more
+2023-11-18 22:44:26 database: close
+org.h2.message.DbException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:421)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1545)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at carsharing.Main.main(Main.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 20 more
+Caused by: java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:479)
+	at org.h2.mvstore.FileStore.writeFully(FileStore.java:113)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1111)
+	at org.h2.mvstore.MVStore.storeNow(MVStore.java:1479)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1334)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1312)
+	at org.h2.mvstore.MVStore.commit(MVStore.java:1303)
+	at org.h2.mvstore.tx.TransactionStore.close(TransactionStore.java:333)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:398)
+	... 18 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:883)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:864)
+	at org.h2.store.fs.FileNio.write(FilePathNio.java:79)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:475)
+	... 26 more
+2023-11-18 22:45:13 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 20480 [1.4.200/2]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1113)
+	at org.h2.mvstore.MVStore.storeNow(MVStore.java:1479)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1334)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1312)
+	at org.h2.mvstore.MVStore.commit(MVStore.java:1303)
+	at org.h2.mvstore.tx.TransactionStore.close(TransactionStore.java:333)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:398)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1545)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at carsharing.Main.main(Main.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 20480 [1.4.200/2]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 30 more
+Caused by: java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 20480 [1.4.200/2]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:479)
+	at org.h2.mvstore.FileStore.writeFully(FileStore.java:113)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1111)
+	... 24 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:883)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:864)
+	at org.h2.store.fs.FileNio.write(FilePathNio.java:79)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:475)
+	... 26 more
+2023-11-18 22:45:13 database: close
+org.h2.message.DbException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:421)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1545)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at carsharing.Main.main(Main.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 20 more
+Caused by: java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 20480 [1.4.200/2]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:479)
+	at org.h2.mvstore.FileStore.writeFully(FileStore.java:113)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1111)
+	at org.h2.mvstore.MVStore.storeNow(MVStore.java:1479)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1334)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1312)
+	at org.h2.mvstore.MVStore.commit(MVStore.java:1303)
+	at org.h2.mvstore.tx.TransactionStore.close(TransactionStore.java:333)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:398)
+	... 18 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:883)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:864)
+	at org.h2.store.fs.FileNio.write(FilePathNio.java:79)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:475)
+	... 26 more
+2023-11-18 22:46:06 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1113)
+	at org.h2.mvstore.MVStore.storeNow(MVStore.java:1479)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1334)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1312)
+	at org.h2.mvstore.MVStore.commit(MVStore.java:1303)
+	at org.h2.mvstore.tx.TransactionStore.close(TransactionStore.java:333)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:398)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1545)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at carsharing.Main.main(Main.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 30 more
+Caused by: java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:479)
+	at org.h2.mvstore.FileStore.writeFully(FileStore.java:113)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1111)
+	... 24 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:883)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:864)
+	at org.h2.store.fs.FileNio.write(FilePathNio.java:79)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:475)
+	... 26 more
+2023-11-18 22:46:06 database: close
+org.h2.message.DbException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:421)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1545)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at carsharing.Main.main(Main.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 20 more
+Caused by: java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 32768 [1.4.200/2]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:479)
+	at org.h2.mvstore.FileStore.writeFully(FileStore.java:113)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1111)
+	at org.h2.mvstore.MVStore.storeNow(MVStore.java:1479)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1334)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1312)
+	at org.h2.mvstore.MVStore.commit(MVStore.java:1303)
+	at org.h2.mvstore.tx.TransactionStore.close(TransactionStore.java:333)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:398)
+	... 18 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:883)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:864)
+	at org.h2.store.fs.FileNio.write(FilePathNio.java:79)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:475)
+	... 26 more
+2023-11-18 22:50:13 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 49152 [1.4.200/2]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1113)
+	at org.h2.mvstore.MVStore.storeNow(MVStore.java:1479)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1334)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1312)
+	at org.h2.mvstore.MVStore.commit(MVStore.java:1303)
+	at org.h2.mvstore.tx.TransactionStore.close(TransactionStore.java:333)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:398)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1545)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at carsharing.Main.main(Main.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 49152 [1.4.200/2]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 30 more
+Caused by: java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 49152 [1.4.200/2]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:479)
+	at org.h2.mvstore.FileStore.writeFully(FileStore.java:113)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1111)
+	... 24 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:883)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:864)
+	at org.h2.store.fs.FileNio.write(FilePathNio.java:79)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:475)
+	... 26 more
+2023-11-18 22:50:13 database: close
+org.h2.message.DbException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:421)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1545)
+	at org.h2.engine.Database.closeImpl(Database.java:1454)
+	at org.h2.engine.Database.close(Database.java:1373)
+	at org.h2.engine.Database.removeSession(Database.java:1307)
+	at org.h2.engine.Session.close(Session.java:963)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:453)
+	at carsharing.Main.main(Main.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.invokeMain(MainMethodExecutor.java:160)
+	at org.hyperskill.hstest.testing.execution.MainMethodExecutor.lambda$launch$1(MainMethodExecutor.java:188)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "Closing" [90028-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 20 more
+Caused by: java.lang.IllegalStateException: Writing to nio:/Users/sue/Library/CloudStorage/OneDrive-Personal/JavaMasterclass/Car Sharing/Car Sharing/task/src/carsharing/db/carsharing.mv.db failed; length 8192 at 49152 [1.4.200/2]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:479)
+	at org.h2.mvstore.FileStore.writeFully(FileStore.java:113)
+	at org.h2.mvstore.MVStore.write(MVStore.java:1111)
+	at org.h2.mvstore.MVStore.storeNow(MVStore.java:1479)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1334)
+	at org.h2.mvstore.MVStore.store(MVStore.java:1312)
+	at org.h2.mvstore.MVStore.commit(MVStore.java:1303)
+	at org.h2.mvstore.tx.TransactionStore.close(TransactionStore.java:333)
+	at org.h2.mvstore.db.MVTableEngine$Store.close(MVTableEngine.java:398)
+	... 18 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:171)
+	at java.base/sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:883)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:864)
+	at org.h2.store.fs.FileNio.write(FilePathNio.java:79)
+	at org.h2.mvstore.DataUtils.writeFully(DataUtils.java:475)
+	... 26 more
+2023-11-18 22:55:35 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 22:55:35 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 22:55:36 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 22:55:36 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 22:55:36 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 22:57:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 22:57:58 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 22:57:58 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 22:57:58 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 22:57:58 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:03:08 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:03:08 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:03:08 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:03:09 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:03:09 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:10:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:10:58 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:10:58 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:10:58 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:10:58 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:11:32 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:11:32 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:11:32 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:11:33 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:11:33 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:12:57 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:12:57 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:12:57 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:12:57 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:12:58 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:23:02 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:23:02 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:23:02 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:23:02 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:23:02 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:25:52 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:25:53 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:25:53 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:25:53 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:25:53 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:27:32 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:27:32 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:27:32 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:27:32 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:27:32 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:29:49 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:29:49 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:29:49 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:29:50 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:29:50 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:31:14 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:31:14 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:31:15 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:31:15 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:31:15 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:50:41 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:50:41 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:50:41 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:50:41 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:50:41 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:50:41 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'First customer' (CUSTOMER: ""RENTED_CAR_ID"" INT)"; SQL statement:
+UPDATE CUSTOMER SET RENTED_CAR_ID=? WHERE ID=? [22018-200]
+2023-11-18 23:52:43 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:52:43 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:52:43 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:52:43 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:52:43 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:52:44 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'First customer' (CUSTOMER: ""RENTED_CAR_ID"" INT)"; SQL statement:
+UPDATE CUSTOMER SET RENTED_CAR_ID=? WHERE ID=? [22018-200]
+2023-11-18 23:53:24 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:53:24 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:53:24 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:53:24 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:53:24 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:53:24 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'First customer' (CUSTOMER: ""RENTED_CAR_ID"" INT)"; SQL statement:
+UPDATE CUSTOMER SET RENTED_CAR_ID=? WHERE ID=? [22018-200]
+2023-11-18 23:55:14 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:55:14 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:55:14 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:55:15 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:55:15 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-18 23:55:15 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'First customer' (CUSTOMER: ""RENTED_CAR_ID"" INT)"; SQL statement:
+UPDATE CUSTOMER SET RENTED_CAR_ID=? WHERE ID=? [22018-200]
+2023-11-19 00:01:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:01:00 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:01:00 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:01:00 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:01:01 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:04:29 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:04:29 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:04:29 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:04:29 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:04:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:04:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'First customer' (CUSTOMER: ""RENTED_CAR_ID"" INT)"; SQL statement:
+UPDATE CUSTOMER SET RENTED_CAR_ID=? WHERE ID=? [22018-200]
+2023-11-19 00:06:35 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:06:35 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:06:36 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:06:36 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:06:36 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" already exists; SQL statement:
+CREATE TABLE COMPANY (ID INTEGER PRIMARY KEY AUTO_INCREMENT, NAME VARCHAR(255) NOT NULL UNIQUE) [42101-200]
+2023-11-19 00:06:36 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'First customer' (CUSTOMER: ""RENTED_CAR_ID"" INT)"; SQL statement:
+UPDATE CUSTOMER SET RENTED_CAR_ID=? WHERE ID=? [22018-200]
+2023-11-19 00:16:07 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'First customer' (CUSTOMER: ""RENTED_CAR_ID"" INT)"; SQL statement:
+UPDATE CUSTOMER SET RENTED_CAR_ID=? WHERE ID=? [22018-200]
+2023-11-19 12:47:36 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE CUSTOMER SET RENTED_CAR_ID = NULL WHERE ID=[*]"; expected "ALL, ANY, SOME"; SQL statement:
+UPDATE CUSTOMER SET RENTED_CAR_ID = NULL WHERE ID= [42001-200]
+2023-11-19 12:50:16 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE CUSTOMER SET RENTED_CAR_ID = NULL WHERE ID=[*]"; expected "ALL, ANY, SOME"; SQL statement:
+UPDATE CUSTOMER SET RENTED_CAR_ID = NULL WHERE ID= [42001-200]
+2023-11-19 12:57:23 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE CUSTOMER SET RENTED_CAR_ID = NULL WHERE ID=[*]"; expected "ALL, ANY, SOME"; SQL statement:
+UPDATE CUSTOMER SET RENTED_CAR_ID = NULL WHERE ID= [42001-200]
+2023-11-19 12:58:44 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE CUSTOMER SET RENTED_CAR_ID=NULL WHERE ID=[*]"; expected "ALL, ANY, SOME"; SQL statement:
+UPDATE CUSTOMER SET RENTED_CAR_ID=NULL WHERE ID= [42001-200]
+2023-11-19 12:59:57 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE CUSTOMER SET RENTED_CAR_ID=NULL WHERE ID=[*]"; expected "ALL, ANY, SOME"; SQL statement:
+UPDATE CUSTOMER SET RENTED_CAR_ID=NULL WHERE ID= [42001-200]
